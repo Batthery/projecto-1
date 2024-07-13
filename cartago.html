@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/cartago.css">
+    <script src="funciones/cartago.js"></script>
+
+</head>
+
+<body style="background-image: url(imagenes/iglesiaCartago.jpg); background-size: 100%; background-repeat: no-repeat; background-color: darkseagreen;">
+
+
+
+
+    <div class="superposicion">
+
+        <dl>
+            <dt>Lugares turisticos de Cartago</dt>
+            <dd>- Catarata La Muralla</dd>
+            <dd>- Jardin Botanico Lankester</dd>
+            <dd>- Parque Nacional Volcán Irazú</dd>
+        </dl>
+
+    </div>
+
+    <div style="width: 100%; margin-top: 51.5%; display: flex; justify-content: space-between; padding-bottom: 3%;">
+
+        <div style="width: 45%; text-align: left; margin-left: 5%;">
+            <button class="mainB" type="button" id="mainboton">
+                Inicio
+            </button>
+        </div>
+    
+        <div  style="width: 45%; text-align: right; margin-right: 5%;">
+            <button class="mainB" type="button" id="infoboton" onclick="abrirVentanaEmergente()">
+                Obtener Informacion
+            </button> 
+        </div>
+    
+    </div>
+
+
+    <!-- Imagenes de catarata-->
+    <div style=" font-size: xx-large; display: flex;">
+        <div style="text-align: left; width: 300px; ">
+            <span ><br><br>Catarata <br><br> La <br><br> Muralla  </span>
+        </div>
+    
+        <div style="text-align: center;">
+            <img id="ima" src="imagenes/catarataMuralla.webp" style="height: 500px; width: 700px; margin-left: 100px; border: 4px green solid;">
+            
+            <div style="width: 100%;"> <p style="text-align: center;" >Galeria de Fotos:</p> </div>
+
+            
+
+            <button class="catB" id="catb1" style="background-image: url(imagenes/catarataMuralla1.webp); margin-left: 80px;">___________</button>
+            <button class="catB" id="catb2" style="background-image: url(imagenes/catarataMuralla2.webp);">___________</button>
+            <button class="catB" id="catb3" style="background-image: url(imagenes/catarataMuralla3.webp);">___________</button>
+            <button class="catB" id="catb4" style="background-image: url(imagenes/catarataMuralla4.webp);">___________</button>  
+            <button class="catB" id="catb5" style="background-image: url(imagenes/catarataMuralla5.webp);">___________</button>
+            <button class="catB" id="catb6" style="background-image: url(imagenes/catarataMuralla6.webp);">___________</button>
+        </div>
+    </div>
+    
+    <!-- Informacion de catarata-->
+    <div class="InfoDiv">
+        <div  >
+            <p style="margin-left: 15px;">
+                <strong>INFORMACION RELEVANTE:</strong>  <br><br>
+                <strong>¿Cómo llegar?: </strong> De camino al Parque Nacional Guayabo, <br>
+                se pasa por varios pueblos incluyendo Pacayas 
+                <br> hasta llegar a una intersección 
+                en Santa Cruz de Turrialba. <br> Aquí se sigue hacia Guayabo arriba <br> 
+                y luego se accede a la propiedad por camino entre fincas. <br>
+                Con Waze Si no tiene 4x4 lo mejor es entrar <br> 
+                por San Antonio de Santa Cruz de Turrialba.
+                <br><br>
+                <strong>¿Qué llevar?: </strong> Ropa cómoda, tenis de trail, bloqueador, gorra, <br>
+                anteojos de sol, repelente, traje de baño, paño y actitud vikinga.
+                <br><br>
+                <strong>Distancia: </strong>3km
+                <br><br>
+                <strong>Dificultad: </strong> Moderada. Es corta pero el regreso es muy empinado.
+                <br><br>
+                <strong>Vehículo:</strong> Carro alto preferiblemente.
+                <br><br>
+                <strong>Parqueo:</strong> Si
+                <br><br>
+                <strong>Mascotas:</strong> Si
+                <br><br>
+                <strong>Camping:</strong> No
+                <br><br>
+                <strong>Contacto:</strong> Adolfo 8408-8446 Rosa Fernández 8309-3452 <br> 
+                ( Hay que llamar a solicitar permiso ya que es una finca privada)
+                <br>
+                <strong>Costo:</strong> ¢2000
+            </p>
+        </div>
+        <div style=" margin-top: 125px; margin-left: 175px;">
+            <!--
+            <iframe width="560" height="315" src="https://youtu.be/dHb3-YNArnE" frameborder="3" allowfullscreen></iframe>
+            -->
+            <iframe width="560" frameborder="0" allowfullscreen="" height="415" src="https://www.youtube.com/embed/dHb3-YNArnE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        
+        </div>
+    </div>
+
+
+    
+    <!-- Imagenes de jardin-->
+    <div style=" font-size: xx-large; display: flex;">
+        <div style="text-align: left; width: 300px; ">
+            <span ><br><br>Jardin   <br><br> Botanico <br><br> Lankester  </span>
+        </div>
+    
+        <div style="text-align: center;">
+            <img id="imaj" src="imagenes/jardin.jpg" style="height: 500px; width: 700px; margin-left: 100px; border: 4px green solid;">
+            
+            <div style="width: 100%;"> <p style="text-align: center;" >Galeria de Fotos:</p> </div>
+
+            
+
+            <button class="catB" id="jarb1" style="background-image: url(imagenes/jardin1.jpg); margin-left: 80px;">___________</button>
+            <button class="catB" id="jarb2" style="background-image: url(imagenes/jardin2.jpg);">___________</button>
+            <button class="catB" id="jarb3" style="background-image: url(imagenes/jardin3.jpg);">___________</button>
+            <button class="catB" id="jarb4" style="background-image: url(imagenes/jardin4.jpg);">___________</button>  
+            <button class="catB" id="jarb5" style="background-image: url(imagenes/jardin5.jpeg);">___________</button>
+            <button class="catB" id="jarb6" style="background-image: url(imagenes/jardin6.jpg);">___________</button>
+        </div>
+    </div>
+
+
+    <!-- Informacion de Jardin -->
+    <div class="InfoDiv">
+        <div  >
+            <p style="margin-left: 15px;">
+                <strong>INFORMACION RELEVANTE:</strong>  <br><br>
+                El Jardín Botánico Lankester es una de las principales <br>
+                atracciones turísticas del Valle Central de Costa Rica. <br>
+                Además de jardín botánico es un centro de investigación <br>
+                de la Universidad de Costa Rica <br>
+                que está dedicado a la exhibición, <br>
+                la conservación y el estudio de las orquídeas. <br>
+                El Jardín está ubicado en la Ciudad de Cartago, <br>
+                a unos treinta kilómetros de San José, la capital del país. <br> <br>
+                <strong> Prpincipales Actividades</strong> <br>
+                El Jardín Botánico Lankester cuenta con amplios senderos <br>
+                de acceso universal, servicio de visitas guiadas para estudiantes <br>
+                y grupos de turistas, una tienda de recuerdos, cafetería, <br>
+                alquiler de espacios para reuniones académicas y sociales y venta de plantas. <br> <br>
+                <strong>Lo Mas Destacado</strong>
+                Más de 20.000 plantas de orquídeas <br>
+                Bosque Secundario<br>
+                Jardín Japonés<br>
+                Heliconias<br>
+                Cactus<br>
+                Helechos<br>
+                Palmeras<br>
+                Bromelias<br>
+
+            </p>
+        </div>
+        <div style=" margin-top: 125px; margin-left: 110px;">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/UV9064UgZxM" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Imagenes volcan-->
+    <div style=" font-size: xx-large; display: flex;">
+        <div style="text-align: left; width: 300px; ">
+            <span ><br><br>Parque Nacional <br><br> Volcan <br><br> Irazú  </span>
+        </div>
+    
+        <div style="text-align: center;">
+            <img id="imav" src="imagenes/volcan.jpg" style="height: 500px; width: 700px; margin-left: 100px; border: 4px green solid;">
+            
+            <div style="width: 100%;"> <p style="text-align: center;" >Galeria de Fotos:</p> </div>
+
+            
+
+            <button class="catB" id="volb1" style="background-image: url(imagenes/volcan1.jpg); margin-left: 80px;">___________</button>
+            <button class="catB" id="volb2" style="background-image: url(imagenes/volcan2.jpg);">___________</button>
+            <button class="catB" id="volb3" style="background-image: url(imagenes/volcan3.jpg);">___________</button>
+            <button class="catB" id="volb4" style="background-image: url(imagenes/volcan4.jpg);">___________</button>  
+            <button class="catB" id="volb5" style="background-image: url(imagenes/volcan5.jpg);">___________</button>
+            <button class="catB" id="volb6" style="background-image: url(imagenes/volcan6.jpg);">___________</button>
+        </div>
+    </div>
+
+    <!-- Informacion del volcan-->
+    <div class="InfoDiv">
+        <div  >
+            <p style="margin-left: 15px;">
+                <strong>INFORMACION RELEVANTE:</strong>  <br><br>
+                <strong>¿Cómo llegar?: </strong> <br>
+                 Se agarra para Cartago y se desvía en Taras a la izquierda, <br>
+                siguiendo los rótulos de Volcán Irazú <br>
+                 hasta llegar a la entrada del Parque Nacional.
+                <br><br>
+                <strong>¿Qué llevar?: </strong> Ropa cómoda, tenis de trail, bloqueador, gorra, <br>
+                anteojos de sol, repelente, traje de baño, paño y actitud vikinga.
+                <br><br>
+                <strong>Distancia: </strong>1km
+                <br><br>
+                <strong>Dificultad: </strong> Facil
+                <br><br>
+                <strong>Vehículo:</strong> Automovil
+                <br><br>
+                <strong>Parqueo:</strong> Si
+                <br><br>
+                <strong>Mascotas:</strong> No
+                <br><br>
+                <strong>Camping:</strong> No
+                <br><br>
+                <strong>Contacto:</strong>Casa Guardaparques: 2200-5025
+                <br> <br>
+                <strong>Costo:</strong> ₡1.000 Nacionales - $15 extranjeros
+            </p>
+        </div>
+
+        <div style=" margin-top: 165px; margin-left: 140px;">
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/aYovE8YGEoY?si=STBiXjD2oUBeK0a9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        
+        
+    </div>
+
+    <div style="text-align: right;"><a href="#">Ir al principio</a></div>
+    
+
+
+
+    <footer>
+        <p>&copy; 2024 Alvaro Murillo Ordoñez</p>
+      </footer>
+    
+
+</body>
+
+</html>

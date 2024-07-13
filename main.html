@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head style="margin: 0%;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funciones/main.js"></script>
+    <title>Turismo CR</title>
+
+    <h1>
+        <img src="imagenes/TURISMO EN CR.png" width="100%">
+    </h1>
+
+
+    <link rel="stylesheet" type="text/css" href="estilos/main.css">
+
+</head>
+
+<body style="background-image: url(imagenes/MainPaisaje1.png); background-repeat: no-repeat; background-size: 100%;">
+
+    <div style="width: 100%; margin-top: 28.5%; display: flex; justify-content: space-between;">
+
+        <div style="width: 45%; text-align: left; margin-left: 5%;">
+            <button type="button" id="mainboton">
+                Inicio
+            </button>
+        </div>
+    
+        <div style="width: 45%; text-align: right; margin-right: 5%;">
+            <button type="button" id="infoboton" onclick="abrirVentanaEmergente()">
+                Obtener Informacion
+            </button> 
+        </div>
+    
+    </div>
+    
+    <br>
+    <br>
+    <div style="font-style: oblique; font-size: larger;">
+        
+            ¡Te damos la más cordial bienvenida a Costa Rica! <br>
+            Este maravilloso país centroamericano es reconocido a nivel mundial por sus impresionantes playas bañadas por dos océanos, sus exuberantes selvas tropicales 
+            <br>
+            que albergan una biodiversidad única, y una increíble variedad de vida silvestre que te dejará sin aliento.
+            <br>
+            Costa Rica es mucho más que un destino turístico; y para esta recopilacion de informacion de mostramos lo que puedes encontrar en 3 de las zonas mas 
+            <br>
+            famosas a nivel nacional por su atractivo turistico. 
+    </div>
+    <hr>
+    <br>
+    <div class="transicion tooltip" style="display: inline;" ><img src="imagenes/cartago.png" width="31%" id="miImagenC" title="Manten click para ver mas info"> 
+        <span class="tooltiptext" style="margin-left: 100px;">
+            <img src="imagenes/cartagoInfo.png" width="500px" alt="Imagen Emergente">
+        </span>
+    </div>
+    <div class="transicion tooltip" style="display: inline;"><img src="imagenes/limon.png"  width="31%" id="miImagenL" title="Manten click para ver mas info">
+        <span class="tooltiptext">
+            <img src="imagenes/LimonInfo.png" width="500px" alt="Imagen Emergente">
+        </span>
+    </div>
+    <div class="transicion tooltip" style="display: inline;"><img src="imagenes/guanacaste.png" width="31%" id="miImagenG" title="Manten click para ver mas info">
+        <span class="tooltiptext" style="margin-right: 400px;">
+            <img src="imagenes/guanacasteInfo.png" width="400px" alt="Imagen Emergente">
+        </span>
+    </div>
+
+    <div style="height: 200px;"></div>
+
+    <div style=" background-image: url(imagenes/CRBandera.png); background-repeat: no-repeat; background-size: 100%; width: 100%; ">
+        <img src="imagenes/provincias.png" usemap="#workmap">
+    </div>
+    
+    
+
+    <map name="workmap">
+        <area href="limon.html" shape="poly" title="LIMON" coords="638,151,635,179,620,184,621,205,592,222,593,266,580,284,585,303,580,326,562,345,564,356,626,381,659,394,724,395,727,401,720,411,722,437,699,468,697,476,673,506,677,525,690,556,706,568,718,565,724,557,767,575,774,585,789,596,794,615,804,615,809,630,824,635,827,530,848,495,878,503,897,523,915,524,921,506,904,489,877,484,863,477,857,459,848,462,802,403,801,396,753,355,702,291,680,254">
+        <area href="cartago.html" shape="poly" title="CARTAGO" coords="565,371,573,380,575,402,556,402,546,409,540,424,543,432,523,453,549,452,563,475,577,481,584,479,596,499,610,497,622,512,640,504,676,526,675,504,697,477,699,470,722,437,719,413,727,396,661,396,627,383,583,363,565,357">
+        <area href="guanacaste.html" shape="poly" title="GUANACASTE" coords="226,111,190,92,173,90,152,84,138,69,127,69,108,101,112,109,110,118,91,114,87,120,106,130,99,143,61,139,49,149,61,164,76,171,85,177,108,179,108,221,74,257,61,300,74,363,112,420,195,437,224,463,237,448,235,427,224,418,207,414,209,403,241,399,247,393,233,369,220,365,218,334,237,346,260,348,284,350,302,361,315,346,322,344,319,315,334,304,343,310,339,287,345,285,341,264,324,247,307,245,288,232,286,219,279,205,229,188,211,188,201,169,186,171,171,147,184,145">
+    </map>
+    
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Alvaro Murillo Ordoñez</p>
+      </footer>
+</body>
+
+</html>

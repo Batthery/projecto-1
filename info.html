@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario con CSS</title>
+<link rel="stylesheet" href="estilos/info.css">
+</head>
+<body >
+
+    <div style="width: 700; height: 500; position: fixed;">
+        <img src="imagenes/mandalaCR.jpg" >
+    </div>
+
+<div class="container" style="position: absolute;">
+  <form action="#">
+    <h2>Contacto</h2>
+    <div class="input-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="input-group">
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="input-group">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+</body>
+</html>

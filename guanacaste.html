@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos en Guanacaste</title>
+    <link rel="stylesheet" href="estilos/guanacaste.css">
+</head>
+<body>
+    <header>
+        <h1>Lugares Turísticos en Guanacaste</h1>
+
+        <div style="width: 100%; display: flex; justify-content: space-between;">
+
+            <div style="width: 45%; text-align: left; margin-left: 5%;">
+                <button type="button" id="mainboton">
+                    Inicio
+                </button>
+            </div>
+        
+            <div style="width: 45%; text-align: right; margin-right: 5%;">
+                <button type="button" id="infoboton" onclick="abrirVentanaEmergente()">
+                    Obtener Informacion
+                </button> 
+            </div>
+        
+        </div>
+    </header>
+
+    <section class="place" id="barra-honda">
+        <div class="media">
+            <img src="imagenes/barrah.jpg" alt="Parque Nacional Barra Honda">
+            <div class="overlay">
+                <button class="btn-play" data-video-id="2xHXmIWm-E4">Ver Video</button>
+            </div>
+        </div>
+        <div class="place-content">
+            <h2>Parque Nacional Barra Honda</h2>
+            <p>El Parque Nacional Barra Honda es famoso por sus impresionantes cuevas de piedra caliza y su biodiversidad. Descubre la belleza natural y las formaciones geológicas únicas que hacen de este lugar un destino imperdible en Guanacaste. <br>
+                ¿Cómo llegar? Se agarra hacía Guanacaste por la ruta 1 cuando llegan a la intersección en Limonal (donde está el toro gigante) doblan a la izquierda por unos 25 minutos hasta ver el rótulo de Parque Nacional Barra Honda donde hay que girar a la derecha y seguir por unos 15 minutos más. </p>
+        </div>
+        <div class="video-container">
+            <!-- Aquí se insertará el video de YouTube con JavaScript -->
+        </div>
+    </section>
+
+    <section class="place" id="rio-celeste">
+        <div class="media">
+            <img src="imagenes/rioc.jpeg" alt="Río Celeste">
+            <div class="overlay">
+                <button class="btn-play" data-video-id="C8Vski1keWM">Ver Video</button>
+            </div>
+        </div>
+        <div class="place-content">
+            <h2>Río Celeste</h2>
+            <p>El Río Celeste es conocido por su sorprendente color azul celeste, que resulta de un fenómeno natural único. Sumérgete en la belleza de sus aguas y explora los alrededores llenos de flora y fauna exuberante. <br>
+                ¿Cómo llegar? Existen varias rutas de tiempo muy parecido, se puede por el Zurquí, Zarcero o por Upala. Nosotros tomamos la Ruta 1 Interamericana Norte y nos desviamos en Upala para así agarrar hacia Bijagua de Upala. Desde aquí son 14 kms hasta la entrada del Parque Nacional Volcán Tenorio. </p>
+        </div>
+        <div class="video-container">
+            <!-- Aquí se insertará el video de YouTube con JavaScript -->
+        </div>
+    </section>
+
+    <section class="place" id="ponderosa">
+        <div class="media">
+            <img src="imagenes/ponderosa.jpg" alt="Ponderosa Adventure Park">
+            <div class="overlay">
+                <button class="btn-play" data-video-id="ZcGySpCjB14">Ver Video</button>
+            </div>
+        </div>
+        <div class="place-content">
+            <h2>Ponderosa Adventure Park</h2>
+            <p>El Ponderosa Adventure Park es un paraíso para los amantes de la aventura y la naturaleza. Disfruta de actividades emocionantes como canopy, paseos a caballo y observación de animales en un entorno natural impresionante. <br>
+                ¿Cómo llegar? Está carretera hacia Liberia </p>
+        </div>
+        <div class="video-container">
+            <!-- Aquí se insertará el video de YouTube con JavaScript -->
+        </div>
+    </section>
+
+    <script src="funciones/guanacaste.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Alvaro Murillo Ordoñez</p>
+    </footer>
+</body>
+</html>

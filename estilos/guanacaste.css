@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    background-color: cadetblue;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.place {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border:  2px solid black;
+}
+
+.place:hover {
+    transform: translateY(-5px);
+}
+
+.media {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 0 0 8px;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.media:hover .overlay {
+    opacity: 1;
+}
+
+.btn-play {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #17a2b8;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay:hover .btn-play {
+    opacity: 1;
+}
+
+.place-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.place-content h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #343a40;
+    font-size: 1.8em;
+}
+
+.place-content p {
+    margin: 0;
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+
+button{
+    background-color: transparent; 
+    border: 0cap; 
+    border-radius: 4px; 
+    color: aliceblue; 
+    font-size: medium;
+  }
+   button:hover{
+    transform: scale(1.4); 
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+    text-decoration: underline;
+   }
+
+
+
+
+/* adaptar al tamano de la pantalla*/
+@media screen and (max-width: 768px) {
+    .place {
+        flex-direction: column;
+    }
+
+    .media {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .place-content,
+    .video-container {
+        padding: 15px;
+    }
+
+    .place-content h2 {
+        font-size: 1.5em;
+    }
+
+    .btn-play {
+        font-size: 1em;
+    }
+}
